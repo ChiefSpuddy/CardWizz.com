@@ -61,6 +61,50 @@
             </div>
         </section>
 
+        <section class="scroll-section">
+            <div class="scroll-container">
+                <div class="scroll-item">
+                    <div class="scroll-image">
+                        <img src="assets/images/hero.png" alt="CardWizz Collection Management">
+                    </div>
+                    <div class="scroll-content">
+                        <h2>Master Your Collection</h2>
+                        <p>Take control of your Pokémon card collection with powerful organization tools. Track every card, set, and variant with ease. Never lose track of a card again.</p>
+                        <div class="scroll-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">100K+</div>
+                                <div class="stat-label">Cards Tracked</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50K+</div>
+                                <div class="stat-label">Active Users</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-item">
+                    <div class="scroll-content">
+                        <h2>Smart Analytics</h2>
+                        <p>Make informed decisions with real-time market data and advanced analytics. Track price trends, monitor market movements, and identify investment opportunities.</p>
+                        <div class="scroll-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">$2M+</div>
+                                <div class="stat-label">Portfolio Value Tracked</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Market Monitoring</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-image">
+                        <img src="assets/images/analytics.png" alt="CardWizz Analytics">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="lightbox">
             <div class="lightbox-close">&times;</div>
             <div class="lightbox-prev"><i class="fas fa-chevron-left"></i></div>
@@ -202,6 +246,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
@@ -357,6 +402,29 @@
 
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+        });
+
+        // Add scroll items to the observer
+        document.querySelectorAll('.scroll-item, .stat-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add scroll effect for images with constraints
+        document.addEventListener('scroll', () => {
+            document.querySelectorAll('.scroll-image img').forEach(img => {
+                const parent = img.closest('.scroll-item');
+                const rect = parent.getBoundingClientRect();
+                
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    // Calculate how far through the section we've scrolled (0 to 1)
+                    const scrollProgress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+                    // Limit the movement to 50px up or down
+                    const maxMove = 50;
+                    const move = Math.max(-maxMove, Math.min(maxMove, (scrollProgress - 0.5) * maxMove));
+                    
+                    img.style.transform = `translateY(${move}px)`;
+                }
+            });
         });
     </script>
 </body>
