@@ -1428,6 +1428,82 @@ section::after {
     .container {
         padding: 0 1rem;
     }
+
+    /* App Store button mobile adjustments */
+    .app-store img {
+        height: 35px; /* Reduced from 50px */
+    }
+
+    /* Review section mobile adjustments */
+    .app-review {
+        padding: 0.5rem 0.75rem;
+        margin: 0.5rem 0;
+        gap: 0.5rem;
+    }
+
+    .rating {
+        font-size: 0.85rem;
+    }
+
+    .review-text {
+        font-size: 0.8rem;
+    }
+
+    /* Hero text mobile adjustments */
+    .hero h1 {
+        font-size: 2.2rem !important;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero .hero-subtitle {
+        font-size: 1rem !important;
+        margin-bottom: 1rem;
+    }
+
+    /* Pokemon badge mobile adjustments */
+    .pokemon-badge {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.75rem;
+        margin: 0 auto 0.75rem;
+        gap: 0.25rem;
+    }
+
+    .pokemon-badge i {
+        font-size: 0.8rem;
+    }
+
+    /* Pricing box mobile adjustments */
+    .pricing-box {
+        padding: 1.25rem;
+    }
+
+    .pricing-box .price {
+        font-size: 2.2rem;
+    }
+
+    .pricing-box .price-period {
+        font-size: 0.9rem;
+    }
+
+    .pricing-box .feature-list li {
+        font-size: 0.9rem;
+        margin: 0.4rem 0;
+    }
+
+    .pricing-box .download-button img {
+        height: 40px; /* Reduced from 48px */
+    }
+
+    /* Section headers mobile adjustments */
+    .pricing-section-header h2,
+    .feature-showcase h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .pricing-section-header p,
+    .feature-showcase .subtitle {
+        font-size: 0.95rem !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1478,6 +1554,38 @@ section::after {
     .scroll-content h2 {
         font-size: 1.8rem !important;
     }
+
+    /* Even smaller screen adjustments */
+    .hero h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero .hero-subtitle {
+        font-size: 0.9rem !important;
+    }
+
+    .app-store img {
+        height: 35px;
+    }
+
+    .pokemon-badge {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .pricing-box .price {
+        font-size: 2rem;
+    }
+
+    .pricing-section-header h2,
+    .feature-showcase h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .app-store img {
+        height: 32px;
+    }
+}
 }
 
 .feature-showcase h2,
