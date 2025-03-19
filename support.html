@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - CardWizz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="/" class="logo">
+                    <img src="assets/images/logotransparent.png" alt="CardWizz Logo">
+                    CardWizz
+                </a>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-links">
+                    <a href="/#features">Features</a>
+                    <a href="/#pricing">Pricing</a>
+                    <a href="/support.html">Support</a>
+                    <a href="https://apps.apple.com/gb/app/cardwizz/id6740775089" class="button">Download Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="legal-page">
+        <div class="container">
+            <h1>Support</h1>
+            <div class="legal-content">
+                <h2>Contact Us</h2>
+                <form class="contact-form" action="mailto:cardwizzapp@gmail.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic...</option>
+                            <option value="general">General Question</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="billing">Billing Issue</option>
+                            <option value="feature">Feature Request</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+
+                <h2>FAQ</h2>
+                <div class="faq-item">
+                    <h3>How does card scanning work?</h3>
+                    <p>Our app uses advanced image recognition to identify Pokémon cards. Simply point your camera at a card and the app will automatically detect and add it to your collection.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How accurate are the market prices?</h3>
+                    <p>Prices are updated regularly from multiple sources including eBay sales data. We track both raw and graded card prices to provide the most accurate market value.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I back up my collection?</h3>
+                    <p>Yes! Premium users can enable cloud backup to securely store their collection data.</p>
+                </div>
+
+                <h2>Community</h2>
+                <p>Join our Discord community for support, tips, and discussions: <a href="#">Discord Invite Link</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="assets/images/logotransparent.png" alt="CardWizz Logo">
+                <span>CardWizz</span>
+            </div>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="/#features">Features</a>
+                    <a href="/#pricing">Pricing</a>
+                    <a href="https://apps.apple.com/gb/app/cardwizz/id6740775089">Download</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="/support.html">Help Center</a>
+                    <a href="/legal.html">Legal</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <a href="/terms.html">Terms of Service</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="https://www.instagram.com/cardwizz/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://twitter.com/CardWizzApp" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://discord.gg/cardwizz" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CardWizz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
